@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		<meta charset="UTF-8">
+		<title>document</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<h1 align="center">Сайт портфолио</h1>
+				<form action="auth.php" method="post">
+					<input type="text" name="name" id="name" placeholder="Ведите имя">
+					<input type="password" name="pass" id="pass" placeholder="Введите пароль">
+					<input type="submit" id="sub" value="Войти">
+					<input type="reset" value="Сброс">
+				</form>
+				<hr color="red">
+		<div>
+					<h2 class="section-title">Мои контакты</h2>
+		<div>
+				<h3>Я в соц. сетях</h3>
+				<ul>
+					<li><a href="http://vk.com" target="_blank" title="Переход на страницу ВК">Я в ВК</a></li>
+					<li><a href="#">Я в ФБ</a></li>
+					<li><a href="#">Я в ТВ</a></li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<h2 class="section-title">Обо мне</h2>
+			<div>
+				<img id="my-ava" src="men.jpg" alt="this picture" title="simple background" height="200" width="200" border="2">
+			</div>
+			<div></div>
+		</div>
+		<div>
+			<h3 class="section-title">Моя биография</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium saepe harum ad consequatur repellat reiciendis accusamus delectus. Debitis officia dolore adipisci, perspiciatis ad ducimus praesentium vitae amet nulla dolorum dolor possimus sit minima quis dolores ab sunt? Nostrum, dicta. Ipsum reprehenderit, culpa nobis! Reiciendis odit animi a! Mollitia, sit, corporis!</p>
+		</div>
+		<div>
+			<h3 class="section-title">Моя статистика</h3>
+			<table border="1" cellpadding="10" cellspacing="0">
+				<tr>
+					<th>Вид проекта</th>
+					<th>Сделано</th>
+					<th>Выкуплено</th>
+				</tr>	
+				<tr>
+					<td>Статичных</td>
+					<td data-max="100">86</td>
+					<td>80</td>
+				</tr>
+				<tr>
+					<td>Адаптивных</td>
+					<td>30</td>
+					<td>20</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<h2 class="section-title">Заказать сайт</h2>
+			<form action="order.php" method="post">
+		<div>	
+				<label for="clname"> Имя клиента</label>
+					<input type="text" placeholder="Введите имя" name="clien_name" id="clname">
+		</div>
+		<div>	<label for="clmail"> 				Электронная почта</label>
+					<input type="text" placeholder="Введите email" name="clien_email" id="clmail">
+		</div>
+		<div>		
+				<label>
+					<span>Выберите пол</span>
+					<input type="radio" placeholder="Введите email" name="gendre" value="male"> М			
+					<input type="radio" placeholder="Введите email" name="gendre" value="female"> Ж
+				</label>		
+		</div>
+			<div>
+				<label>
+					<span>Дополнительные возможности:</span>
+					<input type="checkbox" name="extra" value="adaptive" checked>
+					Адаптивность
+					<input type="checkbox" name="extra" value="hosting">
+					Установка на хостинг
+					<input type="checkbox" name="extra" value="support" checked>
+					Поддержка
+					<input type="checkbox" name="extra" value="admin">
+					Админ панель
+				</label>
+			</div>	
+			<div>
+				<label>
+					<span>Тип сайта</span>
+					<select name="type" multiple>
+						<option value="eshop">Интернет-магазин</option>
+						<option value="landing">Лэндинг</option>
+						<option value="card">Сайт-визитка</option>
+					</select>
+				</label>
+			</div>	
+			<div>
+				<label >
+					<span>Отправить нам мем</span>
+					<input type="file" name="file">
+				</label>
+			</div>
+			<div>
+				<label >
+					<span>Ваш комментарий</span>
+					<textarea name="comment" cols="30" rows="10" maxlength="100"></textarea>
+				</label>
+			</div>
+			<div>
+				<input type="submit" value="Отправить">
+				<button name="reset">Сброс</button>
+			</div>	
+			</form>
+		</div>
+	
+	</body>
+</html>
